@@ -1,0 +1,268 @@
+.schedule-movie {
+  .schedule-movie-content {
+    .mainMaxWidth {
+      max-width: 940px;
+      margin: auto;
+      padding-top: 120px;
+      background: url('../../staticFile/images/back-news.png');
+      background-size: 100%;
+      background-repeat: no-repeat;
+
+      .wrapper-nav-tabs {
+        display: flex;
+
+        .accordion {
+          min-height: 705px;
+          width: 92px;
+          border: 1px solid #ebebec;
+          border-top-left-radius: 4px;
+          border-bottom-left-radius: 4px;
+          list-style-type: none;
+          padding-left: 0;
+          margin-bottom: 0;
+          text-align: center;
+
+          li {
+            display: block;
+
+            a {
+              padding: 20px;
+              position: relative;
+              transition: all 0.2s;
+              display: block;
+              transition: all 0.2s;
+
+              img {
+                opacity: 0.5;
+                width: 50px;
+              }
+
+              &:hover img {
+                opacity: 1;
+              }
+
+              &:after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                width: calc(100% - 40px);
+                transform: translateX(-50%);
+                border-bottom: 1px solid #fff;
+                border-bottom-width: 1px;
+                border-bottom-style: solid;
+                border-bottom-color: rgba(238, 238, 238, 0.88);
+                border-color: rgba(238, 238, 238, 0.88);
+              }
+            }
+          }
+        }
+
+        .tab-content {
+          min-height: 705px;
+          border-top: 1px solid #ebebec;
+          border-bottom: 1px solid #ebebec;
+          width: 30%;
+          overflow-y: hidden;
+
+          .listCinema {
+            .cinema {
+              padding: 15px;
+              padding-left: 20px;
+              float: left;
+              clear: both;
+              width: 100%;
+              position: relative;
+              cursor: pointer;
+              opacity: 0.7;
+              transition: all 0.2s;
+
+              .cinemaImg {
+                width: 50px;
+                float: left;
+              }
+
+              .cinemaInfo {
+                font-size: 14px;
+                padding-left: 60px;
+
+                .cinemaTitle {
+                  color: #8bc541;
+                  font-weight: 500;
+                  line-height: 1.4;
+                }
+
+                .cinemaContent {
+                  font-size: 12px;
+                  color: #949494;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  white-space: nowrap;
+                }
+
+                .cinemaDetail {
+                  color: #fb4226 !important;
+                  font-size: 12px;
+                }
+              }
+
+              &:after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                width: calc(100% - 40px);
+                transform: translateX(-50%);
+                border-bottom: 1px solid #fff;
+                border-color: rgba(238, 238, 238, 0.88);
+              }
+
+              &:hover {
+                opacity: 1;
+              }
+            }
+          }
+        }
+
+        .list-movie {
+          float: left;
+          height: 705px;
+          width: calc(100% - 30% - 92px);
+          border: 1px solid #ebebec;
+          border-top-right-radius: 4px;
+          border-bottom-right-radius: 4px;
+          position: relative;
+          overflow-y: auto;
+          overflow-x: hidden;
+          ::-webkit-scrollbar {
+            width: 10px;
+          }
+          .wrap-movie {
+            float: left;
+            clear: both;
+            padding-bottom: 17px;
+            padding-top: 20px;
+            padding-right: 15px;
+            padding-left: 20px;
+            width: 100%;
+            position: relative;
+            margin-bottom: 0;
+            border: none;
+            box-shadow: none;
+            -webkit-box-shadow: none;
+
+            .movie-info {
+              float: left;
+              clear: both;
+              cursor: pointer;
+              width: 100%;
+              .movieImg {
+                width: 50px;
+                float: left;
+                height: 50px;
+                object-fit: cover;
+              }
+
+              .wrap-info {
+                width: 100%;
+                padding-left: 65px;
+                padding-top: 6px;
+
+                p {
+                  .movieTitle {
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 22px;
+                    color: #000;
+                  }
+                }
+
+                .ng-binding {
+                  margin: 0;
+                  line-height: 1.7;
+                  font-size: 12px;
+                  color: #9b9b9b;
+                }
+              }
+						}
+						
+						#movie-info{
+							display: block;
+						}
+
+            .movieSession {
+              float: left;
+              clear: both;
+              width: 100%;
+              transition: height 0.3s ease-in-out;
+
+              .listTypeTime {
+                float: left;
+                width: 100%;
+                padding-top: 15px;
+
+                .s-version {
+                  float: left;
+                  width: 100%;
+                  font-family: "SF Medium";
+                  font-size: 16px;
+                  color: #000;
+                  margin-bottom: 5px;
+                }
+
+                .sessions {
+                  .session {
+                    width: calc(25% - 10px);
+                    float: left;
+                    font-family: "SF Medium";
+                    font-size: 14px;
+                    font-weight: 400;
+                    margin: 0 10px 10px 0;
+                    padding: 5px 0;
+                    transition: all 0.2s;
+                    text-decoration: none;
+                    display: block;
+                    text-align: center;
+                    background-color: rgba(246, 246, 246, 0.5);
+                    border-radius: 7px;
+                    color: #9b9b9b;
+                    border: 1px solid #e4e4e4;
+
+                    .s-start-time {
+                      font-size: 18px;
+                      font-weight: 500;
+                      color: #108f3e;
+                    }
+                  }
+                }
+              }
+
+              &:after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                width: calc(100% - 40px);
+                transform: translateX(-50%);
+                border-bottom: 1px solid #ccc;
+                border-color: rgba(238, 238, 238, 0.88);
+              }
+            }
+          }
+
+          &::-webkit-scrollbar {
+            width: 4px;
+            background-color: #e8e3e3;
+          }
+          &::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+					}
+					&::-webkit-scrollbar-track{
+						border-radius: 7px;
+					}
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,145 @@
+footer {
+	background-color: #222;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 0;
+	padding-right: 0;
+	color: #949494;
+}
+
+.col-xs-12 {
+	width: 100%;
+
+	.mainMaxWidth {
+		max-width: 940px;
+		float: none;
+		margin: auto;
+		clear: both;
+
+		.row {
+			margin-left: 0;
+			margin-right: 0;
+
+			.fontSizeP {
+				a {
+					font-size: 12px !important;
+					font-size: 80%;
+					font-weight: 700;
+					white-space: nowrap;
+					color: #949494;
+					display: block;
+					transition: all .2s;
+					line-height: 2.3;
+
+					&:hover {
+						color: #fff;
+					}
+				}
+			}
+
+			.title {
+				color: #fff;
+				font-size: 80%;
+			}
+
+			.linePartner {
+				margin-bottom: 15px;
+				padding-left: 0;
+				padding-right: 0;
+
+				a {
+					text-decoration: none;
+					color: #000;
+					cursor: pointer;
+					transition: all .2s;
+					background: transparent;
+
+					&:hover {
+						text-decoration: none;
+						cursor: pointer;
+						color: #fb4226;
+					}
+
+					img {
+						background-color: #fff;
+						vertical-align: middle;
+						border: 0;
+					}
+
+					.iconConnect {
+						border-radius: 50%;
+						height: 30px;
+						width: 30px;
+						margin-right: 15px;
+						&:hover{
+							opacity: .7;
+						}
+					}
+				}
+			}
+			.hideOnMobile{
+				width: 50%;
+				.title{
+					color: #fff;
+					font-size: 80%;
+				}
+				a{
+					text-decoration: none;
+					color: #000;
+					cursor: pointer;
+					transition: all .2s;
+					background: transparent;
+					.iconApp{
+						background: 0 0;
+						height: 30px;
+						width: auto;
+						margin: 5px;
+					}
+				}
+			}
+			.hideOnSocial{
+				.title{
+					color: #fff;
+					font-size: 80%;
+				}
+				.iconApp{
+					background: 0 0;
+					height: 30px;
+					width: auto;
+					margin: 5px;
+				}
+			}
+		}
+		.hrFooter{
+			border-top: 1px solid #4a4a4a;
+		}
+		.contact-footer{
+			.zionIcon{
+				border-radius: 8px;
+				width: 80px;
+				height: auto;
+			}
+			.infoFooter{
+				color: #fff;
+				white-space: nowrap;
+				font-size: 70%;
+				span{
+					display: block;
+					line-height: 1.8;
+					color: #949494;
+					font-size: 12px;
+					font-weight: 400;
+					&:first-child{
+						color: #fff;
+					}
+				}
+			}
+			.imgFooter{
+				.imgBoCo{
+					width: 130px;
+					float: right;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,57 @@
+.buy-ticket {
+	position: relative;
+	margin-bottom: 75px;
+	.buy-ticket-content {
+		display: block;
+		max-width: 940px;
+		margin: auto;
+		height: 80px;
+		position: absolute;
+		top: -80px;
+		width: 100%;
+		left: 50%;
+		transform: translate(-50%, 50%);
+		background-color: #fff;
+		border-radius: 5px;
+		box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+		-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+		-moz-box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+		z-index: 2;
+
+		.ticket {
+			position: absolute;
+			left: 50%;
+			transform: translate(-50%, 50%);
+			width: 95%;
+			margin: 0 auto;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+
+			.ticket-content {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				width: 100px;
+
+				a {
+					color: #000;
+					font-weight: 400;
+					display: block;
+					text-decoration: none;
+				}
+			}
+			.left-content-ticket{
+				display: flex;
+				width: 83%;
+				justify-content: space-between;
+			}
+			.right-content-ticket{
+				width: 15%;
+			}
+		}
+		.dropdown-menu{
+			left: -25px !important;
+		}
+	}
+}

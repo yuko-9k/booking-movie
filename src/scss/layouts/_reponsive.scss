@@ -1,0 +1,140 @@
+@media screen and (max-width:1000px){
+	.buy-ticket{
+		display: none;
+	}
+}
+
+@media screen and (max-width:992px){
+	#homeApp{
+		padding-top: 0 !important;
+		.col-md-6{
+			text-align: center !important;
+			max-width: 100%;
+			flex: 0 0 100%;
+		}
+	}
+	.toTop{
+		position: fixed;
+    right: 5px;
+    bottom: 0;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    z-index: 10;
+		display: block !important;
+		img{
+			width: 100%;
+			height: 100%;
+			display: block;
+		}
+	}
+}
+
+@media screen and (max-width:846px){
+	header{
+		.nav{
+			left: 40% !important;
+		}
+		.user-mobile{
+			display: block !important;
+		}
+		#side-menu{
+			display: block;
+		}
+	}
+	.container{
+		max-width: 100%;	
+	}
+}
+
+@media screen and (max-width:776px){
+	.nav{
+		display: none ;
+	}
+	.user{
+		display: none !important;
+	}.userMobile{
+		display: block !important;
+	}
+	.title{
+		display: none;
+	}
+	.icon-footer{
+		display: none;
+	}
+	.hideOnMobile{
+		display: none !important;
+	}
+	.row{
+		display: flex;
+		justify-content: space-around;
+	}
+	.col-sm-1{
+		flex: none;
+		max-width: 100%;
+	}
+	.col-sm-9{
+		flex: none;
+		max-width: 100%;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width:600px){
+	.schedule-movie-content{
+		display: none;
+	}
+	
+}
+
+@media screen and (max-width:576px){
+	*{
+		box-sizing: border-box;
+	}
+	.slick-carousel{
+		display: none;
+	}
+	.calendar-movie{
+		padding-top: 50px;
+	}
+	.text-detail{
+		position: absolute !important;
+		z-index: 10;
+		bottom: 5%;
+		left: 5%;
+	}
+	.font-weight-bold{
+		display: none;
+	}
+	.text-secondary{
+		display: none;
+	}
+	.col-xs-12{
+		padding-top: 10px;
+	}
+	.col-xs-12 img{
+		display: none !important;
+	}
+	.col-xs-12 .imgReponsive{
+		display: block !important;
+	}
+	.rowTwo{
+		display: none;
+	}
+	.movie-24h{
+		.col-6{
+			max-width: 100%;
+			flex: none;
+			img{
+				display: block !important;
+			}
+		}
+		.col-4{
+			max-width: 100%;
+			flex: none;
+			img{
+				display: block !important;
+			}
+		}
+	}
+}

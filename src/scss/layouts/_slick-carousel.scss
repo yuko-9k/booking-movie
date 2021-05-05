@@ -1,0 +1,91 @@
+.slick-carousel {
+	width: 100%;
+	position: relative;
+	transition: all 0.2s;
+
+	.single-item {
+		margin-bottom: 0;
+		
+
+		img {
+			width: 100%;
+			height: 100%;
+			display: block;
+		}
+
+		.slick-dots {
+			position: absolute;
+			bottom: 50px;
+			z-index: 10;
+			.slick-active{
+				button::before{
+					color: #fb4226;
+				}
+			}
+			li button:before {
+				font-size: 12px;
+				color: #fff;
+		}
+
+	}
+		.slick-arrow {
+			position: absolute;
+			top: 45%;
+			transform: translateY(-50%);
+			background-color: transparent;
+			border: none;
+			width: 50px;
+			height: 100px;
+			z-index: 2;
+			opacity: 0.5;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: contain;
+		}
+
+		.slick-next {
+			right: 12px;
+			background-image: url("../../staticFile/images/next-session.png");
+
+			&:before {
+				content: "";
+			}
+		}
+
+		.slick-prev {
+			left: 12px;
+			background-image: url("../../staticFile/images/back-session.png");
+
+			&:before {
+				content: "";
+			}
+		}
+
+		.slick-next,
+		.slick-prev {
+			width: 75px;
+			z-index: 10;
+
+			&:before {
+				font-size: 50px;
+			}
+		}
+	}
+	.js-modal-btn {
+		border: none;
+		background: 0 0;
+		img {
+			width: 82px;
+			height: 82px;
+			position: absolute;
+			top: 45%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			display: none;
+			transition: all .2s;
+		}
+	}
+	&:hover .js-modal-btn img{
+		display: block;
+	}
+}

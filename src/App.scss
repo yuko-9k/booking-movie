@@ -1,0 +1,21 @@
+// abstracts
+@import './scss/abstracts/font';
+@import './scss/abstracts/mixin';
+@import './scss/abstracts/variable';
+
+// Components
+@import './scss/components/button';
+@import './scss/components/input';
+@import './scss/components/modal';
+
+//layouts
+@import './scss/layouts/header';
+@import './scss/layouts/slick-carousel';
+@import './scss/layouts/buy-ticket';
+@import './scss/layouts/calendar-movie';
+@import './scss/layouts/schedule-movie';
+@import './scss/layouts/movie-24h';
+@import './scss/layouts/movie-app';
+@import './scss/layouts/footer';
+@import './scss/layouts/reponsive';
+// Vendor
